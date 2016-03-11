@@ -1,4 +1,7 @@
-cd "$(dirname "$0")"
+if [ ! $DIR ]; then
+  cd "$(dirname "$0")"
+fi
+
 DOTFILES=$(dirname "$(pwd)")
 
 links=$( find -H "$DOTFILES" -maxdepth 3 -name '*.symlink' )

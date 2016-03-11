@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
+cd "$(dirname "$0")"
 set -e
-
 DIR=$(pwd)
 
 # intall gnome-terminal-theme
@@ -45,6 +45,17 @@ gconftool-2 --set /apps/gnome-terminal/profiles/Default/font --type string "Fira
 if [ ! -d "${HOME}/.vim" ]; then
   mkdir "${HOME}/.vim"
 fi
+
+# install oh-my-zsh
+
+if [ ! -d "${HOME}/.oh-my-zsh" ]; then
+  git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+fi
+
+
+# links
+source "${DIR}/links.sh"
+
 
 # zsh as default shell
 chsh -s $(which zsh)
