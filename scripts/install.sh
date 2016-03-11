@@ -23,3 +23,7 @@ rm "${DIR}/OFL.txt"
 rm "${DIR}/inconsolata.zip"
 
 fc-cache -f -v
+
+gconftool-2 --set --type string /apps/gnome-terminal/global/default_profile one-dark
+gconftool-2 --set /apps/gnome-terminal/profiles/one-dark/use_system_font --type=boolean false
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/font --type string "Fira Mono 11"
