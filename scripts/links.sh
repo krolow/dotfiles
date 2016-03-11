@@ -12,9 +12,9 @@ for link in $links; do
   echo "link: ${link}"
 
   if [ -e $target ]; then
-	echo "Skip ${target} ..."
+    echo "Skip ${target} ..."
   else
-	echo "Creating symlink for ${target}"
-	ln -s $link $target
+    echo "Creating symlink for ${target}"
+    ln -s $link $target
   fi
 done
