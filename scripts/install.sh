@@ -41,15 +41,17 @@ gconftool-2 --set --type string /apps/gnome-terminal/global/default_profile one-
 gconftool-2 --set /apps/gnome-terminal/profiles/one-dark/use_system_font --type=boolean false
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/font --type string "Fira Mono 11"
 
-# create vim directory
-if [ ! -d "${HOME}/.vim" ]; then
-  mkdir "${HOME}/.vim"
-fi
+
+# install vim configuration
+source "./vim.sh"
+
 
 # install oh-my-zsh
 if [ ! -d "${HOME}/.oh-my-zsh" ]; then
   git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 fi
+
+
 
 
 # links
