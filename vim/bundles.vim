@@ -10,9 +10,14 @@ Plug 'ctrlpvim/ctrlp.vim' "fuzzy file finder
 Plug 'vim-airline/vim-airline'
 
 
+"LANGUAGES
+
 "javascript
 Plug 'othree/yajs.vim', {'for': 'javascript'}
 Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
+
+"json
+Plug 'elzr/vim-json', { 'for': 'json' }
 
 "linter/indent
 Plug 'editorconfig/editorconfig-vim'
