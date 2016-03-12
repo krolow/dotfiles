@@ -19,6 +19,13 @@ Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
 "json
 Plug 'elzr/vim-json', { 'for': 'json' }
 
+"html
+Plug 'amirh/HTML-AutoCloseTag', {'for': 'html'}
+Plug 'hail2u/vim-css3-syntax', {'for': 'html'}
+Plug 'gorodinskiy/vim-coloresque', {'for': 'html'}
+Plug 'tpope/vim-haml', {'for': 'html'}
+Plug 'mattn/emmet-vim', {'for': 'html'}
+
 "linter/indent/syntax
 Plug 'scrooloose/syntastic'
 Plug 'editorconfig/editorconfig-vim'
