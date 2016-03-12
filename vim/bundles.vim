@@ -19,7 +19,8 @@ Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
 "json
 Plug 'elzr/vim-json', { 'for': 'json' }
 
-"linter/indent
+"linter/indent/syntax
+Plug 'scrooloose/syntastic'
 Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
