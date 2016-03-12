@@ -6,9 +6,11 @@ Plug 'joshdick/airline-onedark.vim'
 
 "UTILITIES
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons' | Plug 'Xuyuanp/nerdtree-git-plugin' "file drawer
-Plug 'ctrlpvim/ctrlp.vim' "fuzzy file finder
 Plug 'vim-airline/vim-airline'
+Plug 'ctrlpvim/ctrlp.vim' "fuzzy file finder
 
+"git
+Plug 'airblade/vim-gitgutter'
 
 "LANGUAGES
 
