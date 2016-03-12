@@ -20,17 +20,9 @@ fi
 
 
 FONT_DOWNLOADED=false
-if [ ! -f "${HOME}/.fonts/FiraMono-Regular.ttf" ]; then
+if [ ! -f "${HOME}/.fonts/FuraMono-Regular-NerdFont.otf" ]; then
   FONT_DOWNLOADED=true
-  wget https://github.com/mozilla/Fira/raw/master/ttf/FiraMono-Regular.ttf -P "${HOME}/.fonts/"
-fi
-if [ ! -f "${HOME}/.fonts/Inconsolata-Regular.ttf" ]; then
-  FONT_DOWNLOADED=true
-  wget http://www.fontsc.com/font/download/inconsolata -O "${DIR}/inconsolata.zip"
-  unzip -o "${DIR}/inconsolata.zip"
-  mv Inconsolata-*.ttf "${HOME}/.fonts/"
-  rm "${DIR}/OFL.txt"
-  rm "${DIR}/inconsolata.zip"
+  wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/FiraMono/Regular/complete/Fura%20Mono%20Regular%20for%20Powerline%20Nerd%20Font%20Complete%20Mono.otf -O "${HOME}/.fonts/FuraMono-Regular-NerdFont.otf"
 fi
 
 if $FONT_DOWNLOADED ; then
@@ -39,7 +31,7 @@ fi
 
 gconftool-2 --set --type string /apps/gnome-terminal/global/default_profile one-dark
 gconftool-2 --set /apps/gnome-terminal/profiles/one-dark/use_system_font --type=boolean false
-gconftool-2 --set /apps/gnome-terminal/profiles/Default/font --type string "Fira Mono 11"
+gconftool-2 --set /apps/gnome-terminal/profiles/one-dark/font --type string "Fura Mono for Powerline 12"
 
 
 # install vim configuration
