@@ -28,11 +28,6 @@ if [ ! -f "${VIM_DIR}/autoload/plug.vim" ]; then
   wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -P "${VIM_DIR}/autoload"
 fi
 
-# download color theme
-if [ ! -f "${VIM_DIR}/colors/onedark.vim" ]; then
-  wget https://raw.githubusercontent.com/joshdick/onedark.vim/master/colors/onedark.vim -P "${VIM_DIR}/colors"
-fi
-
 #create symlinks for *.vim into .vim directory
 files=$( ls $DOTFILES/vim/*.vim )
 echo $files
