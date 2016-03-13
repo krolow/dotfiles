@@ -12,7 +12,7 @@ Plug 'terryma/vim-multiple-cursors' "select multiple occurencies
 
 "git
 Plug 'airblade/vim-gitgutter'
-
+Plug 'tpope/vim-fugitive'
 "LANGUAGES
 
 "javascript
