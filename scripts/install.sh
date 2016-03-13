@@ -20,9 +20,9 @@ fi
 
 
 FONT_DOWNLOADED=false
-if [ ! -f "${HOME}/.fonts/FuraMono-Regular-NerdFont.otf" ]; then
+if [ ! -f "${HOME}/.fonts/Knack-Regular-NerdFont.ttf" ]; then
   FONT_DOWNLOADED=true
-  wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/FiraMono/Regular/complete/Fura%20Mono%20Regular%20for%20Powerline%20Nerd%20Font%20Complete%20Mono.otf -O "${HOME}/.fonts/FuraMono-Regular-NerdFont.otf"
+  wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Knack%20Regular%20Nerd%20Font%20Complete%20Mono.ttf -O "${HOME}/.fonts/Knack-Regular-NerdFont.ttf"
 fi
 
 if $FONT_DOWNLOADED ; then
@@ -31,7 +31,7 @@ fi
 
 gconftool-2 --set --type string /apps/gnome-terminal/global/default_profile one-dark
 gconftool-2 --set /apps/gnome-terminal/profiles/one-dark/use_system_font --type=boolean false
-gconftool-2 --set /apps/gnome-terminal/profiles/one-dark/font --type string "Fura Mono for Powerline 12"
+gconftool-2 --set /apps/gnome-terminal/profiles/one-dark/font --type string "Knack 12"
 
 
 # install vim configuration
@@ -42,8 +42,6 @@ source "./vim.sh"
 if [ ! -d "${HOME}/.oh-my-zsh" ]; then
   git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 fi
-
-
 
 
 # links
