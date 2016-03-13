@@ -8,6 +8,7 @@ Plug 'joshdick/airline-onedark.vim'
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons' | Plug 'Xuyuanp/nerdtree-git-plugin' "file drawer
 Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim' "fuzzy file finder
+Plug 'terryma/vim-multiple-cursors' "select multiple occurencies
 
 "git
 Plug 'airblade/vim-gitgutter'
