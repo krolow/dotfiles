@@ -1,5 +1,9 @@
 # dispaly in 256 colors
+set -g default-terminal screen-256color
 set -g default-terminal "screen-256color"
+
+# utf8
+set-window-option -g utf8 on
 
 # changes trigger/prefix
 set-option -g prefix C-a
@@ -52,16 +56,22 @@ setw -g window-status-current-bg blue
 setw -g window-status-attr bright
 
 #panes
-set -g pane-border-fg color
-set -g pane-border-bg color
-set -g pane-active-border-fg color
-set -g pane-active-border-bg color
-
-set -g pane-border-fg green
+set -g pane-border-fg "#21252B"
 set -g pane-border-bg black
-set pane-active-border-fg blue
-set pane-active-border-bg black
+set -g pane-active-border-fg "#8191A1"
+set -g pane-active-border-bg black
 
 set -g message-fg white
 set -g message-bg black
 set -g message-attr bright
+
+set -g status-interval 1
+set -g status-justify left
+
+set -g status-bg "#21252B"
+
+set -g status-left-length 60
+set -g status-left "#[fg=#21252B bg=#8181A1]  #S #[fg=#8181A1 bg=#21252B]"
+
+set -g status-right-length 100
+set -g status-right "#[fg=#8181A1 bg=#21252B]#[fg=#21252B bg=#8181A1]#(date +'%d/%m/%Y %H:%M')"
