@@ -51,8 +51,8 @@ set -g renumber-windows on #when close one window sort it again
 
 
 # tmux-online-status
-set -g @online_icon "  "
-set -g @offline_icon "  "
+set -g @online_icon "  "
+set -g @offline_icon "  "
 
 # style..
 
