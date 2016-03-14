@@ -22,7 +22,7 @@ fi
 FONT_DOWNLOADED=false
 if [ ! -f "${HOME}/.fonts/Knack-Regular-NerdFont.ttf" ]; then
   FONT_DOWNLOADED=true
-  wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Knack%20Regular%20Nerd%20Font%20Complete%20Mono.ttf -O "${HOME}/.fonts/Knack-Regular-NerdFont.ttf"
+  wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Knack%20Regular%20Nerd%20Font%20Complete%20Mono.ttf -O "${HOME}/.fonts/Knack-Regular-NerdFont.ttf"
 fi
 
 if $FONT_DOWNLOADED ; then
