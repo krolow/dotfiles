@@ -21,7 +21,7 @@ bind -n WheelDownPane select-pane -t= \; send-keys -M
 set -g history-limit 10000
 
 # increase time
-set -s escape-time 1
+set -sg escape-time 1
 set -sg repeat-time 600
 
 # reload
@@ -43,18 +43,6 @@ set -g renumber-windows on #when close one window sort it again
 
 # style..
 
-#status
-set -g status-fg white
-set -g status-bg black
-
-#window
-set -g window-status-fg cyan
-set -g window-status-bg default
-set -g window-status-attr dim
-setw -g window-status-current-fg white
-setw -g window-status-current-bg blue
-setw -g window-status-attr bright
-
 #panes
 set -g pane-border-fg "#21252B"
 set -g pane-border-bg black
@@ -66,12 +54,21 @@ set -g message-bg black
 set -g message-attr bright
 
 set -g status-interval 1
-set -g status-justify left
+set -g status-justify centre
 
 set -g status-bg "#21252B"
 
-set -g status-left-length 60
-set -g status-left "#[fg=#21252B bg=#8181A1]  #S #[fg=#8181A1 bg=#21252B]"
+#window
+set -g monitor-activity on
+set -g visual-activity off
+set -g window-status-separator ''
 
-set -g status-right-length 100
-set -g status-right "#[fg=#8181A1 bg=#21252B]#[fg=#21252B bg=#8181A1]#(date +'%d/%m/%Y %H:%M')"
+setw -g window-status-format '#I:#W#F'
+setw -g window-status-current-format '#[fg=green]#[fg=#333333 bg=green]#I:#W#F#[fg=green bg=#21252B]'
+
+
+set -g status-left-length 11
+set -g status-left "#[fg=#21252B bg=#8181A1 bold] #[fg=#21252B bg=#8181A1]#S#[fg=#8181A1 bg=green]"
+set -g status-right-length 200
+set -g status-right "#[fg=#00AFFF bg=#21252B]#[fg=#333333 bg=#00AFFF]#(uptime | cut -f 4-5 -d '') #[fg=#8181A1 bg=#00AFFF]#[fg=#21252B bg=#8181A1] #(date +'%d/%m/%Y %H:%M')"
+
