@@ -21,7 +21,7 @@ bind -n WheelDownPane select-pane -t= \; send-keys -M
 set -g history-limit 10000
 
 # increase time
-set -s escape-time 1
+set -s escape-time 0
 set -sg repeat-time 600
 
 # reload
@@ -35,11 +35,24 @@ bind j select-pane -D
 bind k select-pane -U
 bind l select-pane -R
 
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'tmux-plugins/tmux-cpu'
+set -g @plugin 'tmux-plugins/tmux-prefix-highlight'
+set -g @plugin 'tmux-plugins/tmux-online-status'
+
 ### display
 set -g base-index 1 # reorganize to follow keyboard
 setw -g pane-base-index 1 # follow window numbers
 setw -g automatic-rename on
 set -g renumber-windows on #when close one window sort it again
+
+
+# tmux-online-status
+set -g @online_icon "  "
+set -g @offline_icon "  "
 
 # style..
 
@@ -71,7 +84,12 @@ set -g status-justify left
 set -g status-bg "#21252B"
 
 set -g status-left-length 60
-set -g status-left "#[fg=#21252B bg=#8181A1]  #S #[fg=#8181A1 bg=#21252B]"
+set -g status-left "#[fg=#000000 bg=#afff00]#{online_status}#[fg=#afff00 bg=#666666]#[fg=#c0c0c0 bg=#666666]  #S#[fg=#666666 bg=#21252b]"
 
 set -g status-right-length 100
-set -g status-right "#[fg=#8181A1 bg=#21252B]#[fg=#21252B bg=#8181A1] #(date +' %d/%m/%Y ◴ %H:%M:%S')"
+set -g status-right "#[fg=#8181a1 bg=#21252b]#[fg=#21252b bg=#8181a1] #(date +' %d/%m/%Y ◴ %H:%M:%S') #{prefix_highlight}"
+
+
+# run plugins
+run '~/.tmux/plugins/tpm/tpm'
+
