@@ -71,7 +71,7 @@ set -g status-justify left
 set -g status-bg "#21252B"
 
 set -g status-left-length 60
-set -g status-left "#[fg=#21252B bg=#8181A1]  #S #[fg=#8181A1 bg=#21252B]"
+set -g status-left "#[fg=#21252B bg=#8181A1]  #S #[fg=#8181A1 bg=#21252B]"
 
 set -g status-right-length 100
-set -g status-right "#[fg=#8181A1 bg=#21252B]#[fg=#21252B bg=#8181A1]#(date +'%d/%m/%Y %H:%M')"
+set -g status-right "#[fg=#8181A1 bg=#21252B]#[fg=#21252B bg=#8181A1] #(date +' %d/%m/%Y ◴ %H:%M:%S')"
