@@ -88,7 +88,7 @@ set -g status-left-length 60
 set -g status-left "#[fg=#333333 bg=#ffffff bold]#{online_status}#[fg=#ffffff bg=#666666 none]#[fg=#c0c0c0 bg=#666666 bold]  #[none]#S#[fg=#666666 bg=#21252b]"
 
 set -g status-right-length 100
-set -g status-right "#[fg=#666666 bg=#21252b]#[fg=#c0c0c0 bg=#666666] #(date +' %d/%m/%Y ◴ %H:%M:%S') #{prefix_highlight}"
+set -g status-right "#[fg=#666666 bg=#21252b]#[fg=#c0c0c0 bg=#666666] #(date +' %d/%m/%Y ◴ %H:%M') #{prefix_highlight}"
 
 
 # run plugins
