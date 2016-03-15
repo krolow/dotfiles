@@ -22,7 +22,7 @@ fi
 FONT_DOWNLOADED=false
 if [ ! -f "${HOME}/.fonts/Knack-Regular-NerdFont.ttf" ]; then
   FONT_DOWNLOADED=true
-  wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Knack%20Regular%20Nerd%20Font%20Complete%20Mono.ttf -O "${HOME}/.fonts/Knack-Regular-NerdFont.ttf"
+  wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Knack%20Regular%20Nerd%20Font%20Complete%20Mono.ttf -O "${HOME}/.fonts/Knack-Regular-NerdFont.ttf"
 fi
 
 if $FONT_DOWNLOADED ; then
@@ -36,13 +36,13 @@ gconftool-2 --set /apps/gnome-terminal/profiles/one-dark/font --type string "Kna
 
 # install vim configuration
 source "./vim.sh"
-
+# install tmux plugin
+source "./tmux.sh"
 
 # install oh-my-zsh
 if [ ! -d "${HOME}/.oh-my-zsh" ]; then
   git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 fi
-
 
 # links
 source "${DIR}/links.sh"
