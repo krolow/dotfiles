@@ -1,6 +1,6 @@
 # dotfiles
 
-This project wip that holds my personal configurations for:
+This project is WIP that holds my personal configurations for:
 
 - Gnome Terminal
 - Vim
