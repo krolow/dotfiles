@@ -1,0 +1,20 @@
+# Path to your oh-my-zsh installation.
+  export ZSH=~/.oh-my-zsh
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="robbyrussell"
+
+plugins=(git)
+
+# User configuration
+
+  export PATH="/usr/local/heroku/bin:/home/krolow/.rvm/gems/ruby-2.1.2/bin:/home/krolow/.rvm/gems/ruby-2.1.2@global/bin:/home/krolow/.rvm/rubies/ruby-2.1.2/bin:/home/krolow/.nvm/v0.10.26/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/krolow/adt-bundle-linux-x86_64-20130917/sdk/tools:/home/krolow/adt-bundle-linux-x86_64-20130917/sdk/platform-tools:/home/krolow/.rvm/bin"
+# export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
+
+# load alias
+source ~/.dotfiles/alias/alias.sh
