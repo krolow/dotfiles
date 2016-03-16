@@ -9,10 +9,12 @@ Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 
 Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim' "fuzzy file finder
 Plug 'terryma/vim-multiple-cursors' "select multiple occurencies
+Plug 'rking/ag.vim'
 
 "git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+
 "LANGUAGES
 
 "javascript
