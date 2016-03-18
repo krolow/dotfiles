@@ -35,6 +35,14 @@ bind j select-pane -D
 bind k select-pane -U
 bind l select-pane -R
 
+# vim mode
+set -g @shell_mode 'vi'
+set-window-option -g mode-keys vi
+
+# visual copy
+bind-key -t vi-copy 'v' begin-selection
+bind-key -t vi-copy 'y' copy-selection
+
 
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
@@ -42,6 +50,7 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'tmux-plugins/tmux-cpu'
 set -g @plugin 'tmux-plugins/tmux-prefix-highlight'
 set -g @plugin 'tmux-plugins/tmux-online-status'
+set -g @plugin 'tmux-plugins/tmux-yank'
 
 ### display
 set -g base-index 1 # reorganize to follow keyboard
