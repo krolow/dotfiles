@@ -43,6 +43,11 @@ set-window-option -g mode-keys vi
 bind-key -t vi-copy 'v' begin-selection
 bind-key -t vi-copy 'y' copy-selection
 
+unbind [
+unbind p
+bind C-y copy-mode
+bind p paste-buffer
+
 
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
