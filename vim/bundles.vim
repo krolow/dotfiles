@@ -35,4 +35,7 @@ Plug 'mattn/emmet-vim', {'for': 'html'}
 Plug 'scrooloose/syntastic'
 Plug 'editorconfig/editorconfig-vim'
 
+"golang
+Plug 'fatih/vim-go', {'for': 'go'}
+
 call plug#end()
