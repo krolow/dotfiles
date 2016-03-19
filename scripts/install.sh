@@ -29,9 +29,9 @@ if $FONT_DOWNLOADED ; then
   fc-cache -f -v
 fi
 
-gconftool-2 --set --type string /apps/gnome-terminal/global/default_profile one-dark
-gconftool-2 --set /apps/gnome-terminal/profiles/one-dark/use_system_font --type=boolean false
-gconftool-2 --set /apps/gnome-terminal/profiles/one-dark/font --type string "Knack 12"
+gconftool-2 --set /apps/gnome-terminal/global/default_profile --type string one-dark
+gconftool-2 --set /apps/gnome-terminal/profiles/one-dark/use_system_font --type boolean false
+gconftool-2 --set /apps/gnome-terminal/profiles/one-dark/font --type string "Knack NerdFontCompleteMono 12"
 
 
 # install vim configuration
