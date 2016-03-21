@@ -10,6 +10,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim' "fuzzy file finder
 Plug 'terryma/vim-multiple-cursors' "select multiple occurencies
 Plug 'rking/ag.vim'
+Plug 'tpope/vim-surround'
 
 "git
 Plug 'airblade/vim-gitgutter'
