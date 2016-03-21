@@ -22,7 +22,7 @@ set -g history-limit 10000
 
 # increase time
 set -s escape-time 0
-set -sg repeat-time 600
+set -sg repeat-time 0
 
 # reload
 bind r source-file ~/.tmux.conf \; display "Config Reloaded!!!"
