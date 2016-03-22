@@ -11,8 +11,15 @@ plugins=(git)
 
 # User configuration
 
-  export PATH="/usr/local/heroku/bin:/home/krolow/.rvm/gems/ruby-2.1.2/bin:/home/krolow/.rvm/gems/ruby-2.1.2@global/bin:/home/krolow/.rvm/rubies/ruby-2.1.2/bin:/home/krolow/.nvm/v0.10.26/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/krolow/adt-bundle-linux-x86_64-20130917/sdk/tools:/home/krolow/adt-bundle-linux-x86_64-20130917/sdk/platform-tools:/home/krolow/.rvm/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:"
+
+if [ -d "$HOME/.bin" ]; then
+  PATH="$HOME/.bin:$PATH"
+fi
+
+[[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
+
+export PATH
 
 source $ZSH/oh-my-zsh.sh
 
