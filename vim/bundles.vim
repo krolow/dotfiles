@@ -32,6 +32,9 @@ Plug 'gorodinskiy/vim-coloresque', {'for': 'html'}
 Plug 'tpope/vim-haml', {'for': 'html'}
 Plug 'mattn/emmet-vim', {'for': 'html'}
 
+"docker
+Plug 'ekalinin/Dockerfile.vim'
+
 "linter/indent/syntax
 Plug 'scrooloose/syntastic'
 Plug 'editorconfig/editorconfig-vim'
