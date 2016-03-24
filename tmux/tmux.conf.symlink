@@ -48,6 +48,9 @@ unbind p
 bind C-y copy-mode
 bind p paste-buffer
 
+# copy to clipboard
+bind -t vi-copy y copy-pipe "xclip -sel clip -i"
+
 
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
