@@ -20,6 +20,9 @@ set -g mouse-select-window on
 # scroll-back size
 set -g history-limit 10000
 
+# open window in current path
+bind c new-window -c "#{pane_current_path}"
+
 # increase time
 set -s escape-time 0
 set -sg repeat-time 0
@@ -28,8 +31,8 @@ set -sg repeat-time 0
 bind r source-file ~/.tmux.conf \; display "Config Reloaded!!!"
 
 # panes
-bind | split-window -h
-bind - split-window -v
+bind | split-window -h -c "#{pane_current_path}"
+bind - split-window -v -c "#{pane_current_path}"
 bind h select-pane -L
 bind j select-pane -D
 bind k select-pane -U
