@@ -7,7 +7,7 @@
 "Use the Linux dictionary when spelling is in doubt.
 "Window users can copy the file to their machine.
 function! Tab_Or_Complete()
-  if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
+  if (col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w')
     return "\<C-N>"
   else
     return "\<Tab>"
@@ -17,11 +17,11 @@ endfunction
 " toggle relative number line
 
 function! NumberToggle()
-  if(&relativenumber == 1)
+  if (&relativenumber == 1)
     set norelativenumber
     set number
   else
     set nonumber
     set relativenumber
   endif
-endfunc
+endfunction
