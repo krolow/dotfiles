@@ -25,12 +25,13 @@ Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
 "json
 Plug 'elzr/vim-json', { 'for': 'json' }
 
-"html
+"html/css/sass
 Plug 'amirh/HTML-AutoCloseTag', {'for': 'html'}
-Plug 'hail2u/vim-css3-syntax', {'for': 'html'}
+Plug 'hail2u/vim-css3-syntax', {'for': ['html', 'css', 'scss']}
 Plug 'gorodinskiy/vim-coloresque', {'for': 'html'}
 Plug 'tpope/vim-haml', {'for': 'html'}
 Plug 'mattn/emmet-vim', {'for': 'html'}
+Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
 
 "docker
 Plug 'ekalinin/Dockerfile.vim'
