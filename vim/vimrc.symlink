@@ -1,7 +1,9 @@
 source ~/.vim/bundles.vim "load bundles to install
+source ~/.vim/general.vim "general vim config
 source ~/.vim/interface.vim "configure interface aspects
 source ~/.vim/backups.vim "define vim backups/undo/redo
 source ~/.vim/statusline.vim "configure the vim status line
 source ~/.vim/mappings.vim "mapping keys
 source ~/.vim/functions.vim "functions to use
 source ~/.vim/plugins.vim "map/configure bundles to use
+source ~/.vim/autocommands.vim "auto commands to run
