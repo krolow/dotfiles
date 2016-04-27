@@ -14,6 +14,9 @@ Plug 'Chiel92/vim-autoformat'
 "csv
 Plug 'chrisbra/csv.vim'
 
+"markdown
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 
 "git
 Plug 'airblade/vim-gitgutter'
