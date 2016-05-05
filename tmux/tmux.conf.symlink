@@ -38,6 +38,10 @@ bind j select-pane -D
 bind k select-pane -U
 bind l select-pane -R
 
+# windows
+bind-key [ previous-window
+bind-key ] next-window
+
 # vim mode
 set -g @shell_mode 'vi'
 set-window-option -g mode-keys vi
@@ -46,7 +50,6 @@ set-window-option -g mode-keys vi
 bind-key -t vi-copy 'v' begin-selection
 bind-key -t vi-copy 'y' copy-selection
 
-unbind [
 unbind p
 bind C-y copy-mode
 bind p paste-buffer
