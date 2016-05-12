@@ -48,3 +48,5 @@ let g:airline#extensions#hunks#enabled=0
 let g:airline#extensions#branch#enabled=1
 
 
+set mouse=n
+set ttymouse=xterm2
