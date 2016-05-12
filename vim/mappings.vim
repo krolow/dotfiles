@@ -32,4 +32,7 @@ inoremap <c-s> <c-o>:Update<CR>
 :set dictionary="/usr/dict/words"
 
 "relative line number toggle
-nnoremap <leader>l :call NumberToggle()<cr>
+nnoremap <leader>l :call NumberToggle()<CR>
+
+"bind zoom toggle
+nnoremap <leader>z :call ZoomToggle()<CR>
