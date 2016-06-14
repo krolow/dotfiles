@@ -28,3 +28,6 @@ source ~/.dotfiles/alias/alias.sh
 
 #do not use ctrl+s ctrl+q
 stty -ixon
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
