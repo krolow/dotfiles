@@ -11,6 +11,8 @@ Plug 'ctrlpvim/ctrlp.vim' "fuzzy file finder
 Plug 'terryma/vim-multiple-cursors' "select multiple occurencies
 Plug 'rking/ag.vim'
 Plug 'Chiel92/vim-autoformat'
+Plug 'jiangmiao/auto-pairs'
+
 "csv
 Plug 'chrisbra/csv.vim'
 
