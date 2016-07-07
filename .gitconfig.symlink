@@ -1,0 +1,12 @@
+[user]
+  name = Vinícius Krolow
+  email = krolow@gmail.com
+
+[init]
+  templatedir = ~/.dotfiles/git/templates/
+
+[push]
+  default = current
+
+[commit]
+  template = ~/.dotfiles/git/templates/commit
