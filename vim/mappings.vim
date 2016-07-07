@@ -38,5 +38,7 @@ nnoremap <leader>l :call NumberToggle()<CR>
 nnoremap <leader>z :call ZoomToggle()<CR>
 
 "indent
+nmap <Tab> >>
+nmap <S-Tab> <<
 vmap <Tab> >gv
 vmap <S-Tab> <gv
