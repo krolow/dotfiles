@@ -52,4 +52,7 @@ Plug 'pmsorhaindo/syntastic-local-eslint.vim'
 "golang
 Plug 'fatih/vim-go', {'for': 'go'}
 
+"rust
+Plug 'rust-lang/rust.vim', {'for': 'rs'}
+
 call plug#end()
