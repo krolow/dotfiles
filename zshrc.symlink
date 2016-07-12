@@ -24,7 +24,7 @@ export PATH
 source $ZSH/oh-my-zsh.sh
 
 # load alias
-source ~/.dotfiles/alias/alias.sh
+source ~/.dotfiles/alias.sh
 
 #do not use ctrl+s ctrl+q
 stty -ixon
