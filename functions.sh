@@ -21,3 +21,7 @@ docker-ready-to-work() {
   docker-force-clean
   docker-start-work
 }
+
+editorconfig() {
+  cp ~/.dotfiles/.editorconfig $1
+}
