@@ -106,6 +106,8 @@ set -g status-left "#[fg=#333333 bg=#ffffff bold]#{online_status}#[fg=#ffffff bg
 set -g status-right-length 100
 set -g status-right "#[fg=#000000 bg=#21252b]#[fg=#ffffff bg=#000000] #(date +' %d/%m/%Y ◴ %H:%M') #{prefix_highlight}"
 
+# os config
+if-shell "uname | grep -q Darwin" "source-file .tmux-macosx.conf" "source-file .tmux-linux.conf"
 
 
 # run plugins
