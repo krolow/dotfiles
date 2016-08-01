@@ -10,8 +10,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 # User configuration
-
-PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:"
+PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 if [ -d "$HOME/.bin" ]; then
   PATH="$HOME/.bin:$PATH"
