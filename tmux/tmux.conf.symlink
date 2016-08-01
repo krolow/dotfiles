@@ -3,19 +3,16 @@ set -g default-terminal screen-256color
 set -g default-terminal "screen-256color"
 
 # utf8
-set-window-option -g utf8 on
+# set-window-option -g utf8 on
 
 # changes trigger/prefix
 set-option -g prefix C-a
 bind-key a send-prefix
 
 # enable mouse
-set -g mode-mouse on
-set -g mouse-resize-pane on
-set -g mouse-select-pane on
-set -g mouse-select-window on
-#bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'select-pane -t=; copy-mode -e; send-keys -M'"
-#bind -n WheelDownPane select-pane -t= \; send-keys -M
+set -g mouse on
+bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'select-pane -t=; copy-mode -e; send-keys -M'"
+bind -n WheelDownPane select-pane -t= \; send-keys -M
 
 # scroll-back size
 set -g history-limit 10000
