@@ -2,8 +2,12 @@ etcd-ls() {
   curl -s http://127.0.0.1:2379/v2/keys/$1 | python -m json.tool
 }
 
+docker-vault () {
+  docker run -d -p :14242:3000 -v ~/.ssh:/vault/.ssh dockito/vault
+}
+
 docker-start-work () {
-  docker run -d -p 172.17.42.1:14242:3000 -v ~/.ssh:/vault/.ssh dockito/vault &&
+  docker-vault &&
   docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock jwilder/nginx-proxy &&
   docker run \
     -d \
