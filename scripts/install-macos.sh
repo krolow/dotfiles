@@ -12,6 +12,10 @@ for file in "${DIR}/../macos/*.sh"; do
   bash -c $file
 done
 
+# Increase keyboard speed
+defaults write -g KeyRepeat -int 1
+defaults write -g InitialKeyRepeat -int 10
+
 # Install font
 # if [ ! -f "${HOME}/Library/Fonts/Knack-Regular-NerdFont.ttf" ]; then
 #  wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Knack%20Regular%20Nerd%20Font%20Complete%20Mono.ttf -O "~/Library/Fonts/Knack-Regular-NerdFont.ttf"
