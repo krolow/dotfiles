@@ -19,6 +19,7 @@ Plug 'chrisbra/csv.vim'
 "markdown
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'JamshedVesuna/vim-markdown-preview'
 
 "git
 Plug 'airblade/vim-gitgutter'
