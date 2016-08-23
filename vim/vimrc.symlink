@@ -7,3 +7,4 @@ source ~/.vim/mappings.vim "mapping keys
 source ~/.vim/functions.vim "functions to use
 source ~/.vim/plugins.vim "map/configure bundles to use
 source ~/.vim/autocommands.vim "auto commands to run
+source ~/.vim/commands.vim "custom vim commands
