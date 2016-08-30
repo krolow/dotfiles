@@ -56,4 +56,7 @@ Plug 'fatih/vim-go', {'for': 'go'}
 "rust
 Plug 'rust-lang/rust.vim', {'for': 'rs'}
 
+"qml
+Plug 'peterhoeg/vim-qml', {'for': 'qml'}
+
 call plug#end()
