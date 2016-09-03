@@ -30,5 +30,11 @@ source ~/.dotfiles/functions.sh
 #do not use ctrl+s ctrl+q
 stty -ixon
 
+#golang
+export GOPATH=$HOME/golang
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
