@@ -30,6 +30,9 @@ source ~/.dotfiles/functions.sh
 #do not use ctrl+s ctrl+q
 stty -ixon
 
+#editor
+export EDITOR=vim
+
 #golang
 export GOPATH=$HOME/golang
 export GOROOT=/usr/local/opt/go/libexec
