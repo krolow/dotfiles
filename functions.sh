@@ -29,3 +29,7 @@ docker-ready-to-work() {
 editorconfig() {
   cp ~/.dotfiles/.editorconfig $1
 }
+
+my-external-ip() {
+  curl -S http://ipinfo.io/ip
+}
