@@ -25,6 +25,9 @@ Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
+"autocomplete
+Plug 'Shougo/neocomplete.vim'
+
 "LANGUAGES
 
 "javascript
