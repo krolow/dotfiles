@@ -25,8 +25,13 @@ Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'airblade/vim-gitgutter'
 "Plug 'tpope/vim-fugitive'
 
-"autocomplete
 Plug 'Shougo/neocomplete.vim'
+
+"emoji
+Plug 'junegunn/vim-emoji'
+
+"comment
+Plug 'tpope/vim-commentary'
 
 "LANGUAGES
 
