@@ -1,9 +1,9 @@
 " themes
-let base16colorspace=256
-let g:onedark_termcolors=256
-set t_Co=256
+" let base16colorspace=256
+" let g:onedark_termcolors=256
+" set t_Co=256
 colorscheme onedark
-let s:black = { "gui": "#282C34", "cterm": "0", "cterm16": "0" }
+let g:onedark_termcolors=16
 
 " interface settings
 set number
