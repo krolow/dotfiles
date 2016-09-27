@@ -7,3 +7,9 @@ set clipboard^=unnamedplus
 
 "delete macosx work as delete
 set backspace=indent,eol,start
+
+"disable complete preview
+set completeopt-=preview
+
+set formatoptions+=w
+set tw=100
