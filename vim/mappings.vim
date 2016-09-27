@@ -26,11 +26,6 @@ nnoremap <silent> <C-s :<C-u>Update<CR>
 inoremap <c-s> <Esc>:Update<CR>
 inoremap <c-s> <c-o>:Update<CR>
 
-
-"tab complete
-:inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
-:set dictionary="/usr/dict/words"
-
 "relative line number toggle
 nnoremap <leader>l :call NumberToggle()<CR>
 
@@ -50,6 +45,15 @@ nmap <Leader>p "+p
 nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
+
+"autocomplete
+" inoremap <expr><TAB>  pumvisible() ? "\<C-n>" :
+"       \ <SID>check_back_space() ? "\<TAB>" :
+"       \ neocomplete#start_manual_complete()
+" function! s:check_back_space() "{{{
+"   let col = col('.') - 1
+"   return !col || getline('.')[col - 1]  =~ '\s'
+" endfunction"}}}
 
 " golang maps
 autocmd FileType go nmap <leader>b  <Plug>(go-build)
