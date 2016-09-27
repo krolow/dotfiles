@@ -11,5 +11,4 @@ set backspace=indent,eol,start
 "disable complete preview
 set completeopt-=preview
 
-set formatoptions+=w
-set tw=100
+set tw=0

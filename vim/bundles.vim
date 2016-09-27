@@ -12,7 +12,8 @@ Plug 'terryma/vim-multiple-cursors' "select multiple occurencies
 Plug 'rking/ag.vim'
 Plug 'Chiel92/vim-autoformat'
 Plug 'jiangmiao/auto-pairs'
-"Plug 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
+Plug 'tpope/vim-sensible'
 
 "csv
 Plug 'chrisbra/csv.vim'
@@ -23,7 +24,7 @@ Plug 'JamshedVesuna/vim-markdown-preview'
 
 "git
 Plug 'airblade/vim-gitgutter'
-"Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 Plug 'Shougo/neocomplete.vim'
 
