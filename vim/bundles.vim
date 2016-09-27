@@ -23,7 +23,7 @@ Plug 'JamshedVesuna/vim-markdown-preview'
 
 "git
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
+"Plug 'tpope/vim-fugitive'
 
 "autocomplete
 Plug 'Shougo/neocomplete.vim'
