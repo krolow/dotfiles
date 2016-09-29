@@ -13,8 +13,10 @@ let g:neocomplete#enable_at_startup=2
 let g:neocomplete#enable_auto_select=1
 let g:neocomplete#enable_smart_case=1
 let g:neocomplete#auto_completion_start_length=1
+inoremap <expr><Tab>        pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <C-g> neocomplete#undo_completion()
 inoremap <expr> <C-l> neocomplete#complete_common_string()
+
 set nocompatible
 
 set runtimepath+=~/work/neocomplete.vim/
