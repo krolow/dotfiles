@@ -33,3 +33,7 @@ editorconfig() {
 my-external-ip() {
   curl -S http://ipinfo.io/ip
 }
+
+docker-bash() {
+  docker exec -ti $1 /bin/bash
+}
