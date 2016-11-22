@@ -37,3 +37,7 @@ my-external-ip() {
 docker-bash() {
   docker exec -ti $1 /bin/bash
 }
+
+listen-at-port() {
+  sudo netstat -tulpn | grep "$1" | awk '{print $4 " " $7}'
+}
