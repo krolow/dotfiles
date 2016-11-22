@@ -8,7 +8,7 @@ nnoremap <leader>bc :bp\|:bd #<CR> " close current buffer
 nnoremap <leader>bp :bprevious<CR> " switch to previous buffer
 
 "ag search
-nnoremap \ :Ag<SPACE>
+nnoremap \ :Ag!<SPACE>
 
 "split panes
 nnoremap <C-W>\| <C-W>v

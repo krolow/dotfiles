@@ -43,3 +43,5 @@ let g:go_auto_sameids = 1
 let g:go_guru_tags = "mycustomtag"
 let g:go_list_type = "quickfix"
 
+"ag
+let g:ag_lhandler="botright lopen"
