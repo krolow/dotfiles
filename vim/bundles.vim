@@ -64,7 +64,7 @@ Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
 
 "rust
-Plug 'rust-lang/rust.vim', {'for': 'rs'}
+Plug 'rust-lang/rust.vim'
 
 "qml
 Plug 'peterhoeg/vim-qml', {'for': 'qml'}
