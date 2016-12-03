@@ -32,21 +32,3 @@ fi
 gconftool-2 --set /apps/gnome-terminal/global/default_profile --type string one-dark
 gconftool-2 --set /apps/gnome-terminal/profiles/one-dark/use_system_font --type boolean false
 gconftool-2 --set /apps/gnome-terminal/profiles/one-dark/font --type string "Knack NerdFontCompleteMono 12"
-
-
-# install vim configuration
-source "./vim.sh"
-# install tmux plugin
-source "./tmux.sh"
-
-# install oh-my-zsh
-if [ ! -d "${HOME}/.oh-my-zsh" ]; then
-  git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-fi
-
-# links
-source "${DIR}/links.sh"
-
-
-# zsh as default shell
-chsh -s $(which zsh)
