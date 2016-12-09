@@ -14,7 +14,7 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'jiangmiao/auto-pairs'
 Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-sensible'
-
+Plug 'krolow/readmestart.vim'
 "csv
 Plug 'chrisbra/csv.vim'
 
