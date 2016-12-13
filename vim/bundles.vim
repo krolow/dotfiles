@@ -15,6 +15,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-sensible'
 Plug 'krolow/readmestart.vim'
+Plug 'tpope/vim-surround'
+
 "csv
 Plug 'chrisbra/csv.vim'
 
