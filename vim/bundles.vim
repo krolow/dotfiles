@@ -16,6 +16,7 @@ Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-sensible'
 Plug 'krolow/readmestart.vim'
 Plug 'tpope/vim-surround'
+Plug 'junegunn/vim-easy-align'
 
 "csv
 Plug 'chrisbra/csv.vim'
