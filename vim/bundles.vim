@@ -71,4 +71,7 @@ Plug 'rust-lang/rust.vim'
 "qml
 Plug 'peterhoeg/vim-qml', {'for': 'qml'}
 
+"haskel
+Plug 'neovimhaskell/haskell-vim', {'for': 'hs'}
+
 call plug#end()
