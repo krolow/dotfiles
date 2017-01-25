@@ -45,3 +45,6 @@ let g:go_list_type = "quickfix"
 
 "ag
 let g:ag_lhandler="botright lopen"
+
+"ctrl+p
+let g:ctrlp_map = ''
