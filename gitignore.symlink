@@ -1,3 +1,7 @@
 # Vim swap and backup files
 *.swo
 *.swp
+
+#npm
+node_modules
+npm-debug.log
