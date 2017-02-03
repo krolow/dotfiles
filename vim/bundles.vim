@@ -43,6 +43,9 @@ Plug 'tpope/vim-commentary'
 Plug 'othree/yajs.vim', {'for': 'javascript'}
 Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
 
+"node
+Plug 'moll/vim-node'
+
 "json
 Plug 'elzr/vim-json', { 'for': 'json' }
 
