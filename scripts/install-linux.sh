@@ -3,6 +3,12 @@ cd "$(dirname "$0")"
 set -e
 DIR=$(pwd)
 
+
+# install apps
+for file in "${DIR}/../linux/*.sh"; do
+  bash -c $file
+done
+
 # intall gnome-terminal-theme
 if [ ! -d "${HOME}/.gconf/apps/gnome-terminal/profiles/one-dark" ]; then
   if [ ! -f "${DIR}/one-dark.sh" ]; then
