@@ -15,7 +15,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-sensible'
 Plug 'krolow/readmestart.vim'
-Plug 'tpope/vim-surround'
 Plug 'junegunn/vim-easy-align'
 
 "csv
@@ -77,5 +76,8 @@ Plug 'peterhoeg/vim-qml', {'for': 'qml'}
 
 "haskel
 Plug 'neovimhaskell/haskell-vim', {'for': 'hs'}
+
+"lisp
+Plug 'kovisoft/slimv', {'for': 'lisp'}
 
 call plug#end()
