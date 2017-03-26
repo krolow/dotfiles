@@ -66,6 +66,7 @@ set -g @online_icon " 🌏 "
 set -g @offline_icon "#[fg=#ff0000] 🚫 "
 
 # style..
+set-option -g status-position bottom
 
 #status
 set -g status-fg white
