@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 "THEMES
 Plug 'joshdick/onedark.vim'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'joshdick/airline-onedark.vim'
 
 "UTILITIES
@@ -49,7 +50,7 @@ Plug 'moll/vim-node'
 Plug 'elzr/vim-json', { 'for': 'json' }
 
 "html/css/sass
-Plug 'amirh/HTML-AutoCloseTag', {'for': 'html'}
+Plug 'alvan/vim-closetag', {'for': 'html'}
 Plug 'hail2u/vim-css3-syntax', {'for': ['html', 'css', 'scss']}
 Plug 'gorodinskiy/vim-coloresque', {'for': 'html'}
 Plug 'tpope/vim-haml', {'for': 'html'}
