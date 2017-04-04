@@ -71,3 +71,6 @@ nmap ga <Plug>(EasyAlign)
 
 "ctrl + p ... closes nerd tree
 nnoremap <c-p> :NERDTreeClose\|CtrlP<CR>
+
+"ctrl + b ... cloes nerd tree and list buffers
+nnoremap <silent> <c-b> :NERDTreeClose\|:CtrlPBuffer<CR>
