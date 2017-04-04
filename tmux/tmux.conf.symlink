@@ -38,10 +38,6 @@ bind-key ] next-window
 set -g @shell_mode 'vi'
 set-window-option -g mode-keys vi
 
-# visual copy
-bind-key -t vi-copy 'v' begin-selection
-bind-key -t vi-copy 'y' copy-selection
-
 unbind p
 bind C-y copy-mode
 bind p paste-buffer
@@ -96,10 +92,10 @@ set -g status-left-length 60
 set -g status-left "#[fg=#333333 bg=#ffffff bold]#{online_status}#[fg=#ffffff bg=#000000 none]#[fg=#ffffff bg=#000000 bold] 🖥   #[none] #S#[fg=#000000 bg=#21252b]"
 
 set -g status-right-length 100
-set -g status-right "#[fg=#000000 bg=#21252b]#[fg=#ffffff bg=#000000]💸 #(dolarhoje) #(date +'📅  %d/%m/%Y ⏰  %H:%M') #{prefix_highlight}"
+set -g status-right "#[fg=#000000 bg=#21252b]#[fg=#ffffff bg=#000000]💸  #(dolarhoje) #(date +'📅  %d/%m/%Y ⏰  %H:%M') #{prefix_highlight}"
 
 # os config
-if-shell "uname | grep -q Darwin" "source-file .tmux-macosx.conf" "source-file ~/.tmux-linux.conf"
+if-shell "uname | grep -q Darwin" "source-file ~/.tmux-macosx.conf" "source-file ~/.tmux-linux.conf"
 
 
 # run plugins

@@ -1,9 +1,7 @@
-set -g mouse on
-bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'select-pane -t=; copy-mode
--e; send-keys -M'"
-bind -n WheelDownPane select-pane -t= \; send-keys -M
-set-option -g default-command "reattach-to-user-namespace -l zsh"
-bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
-bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
+set-option -g mouse on
+set-option -g default-command "reattach-to-user-namespace $SHELL --login"
+bind-key -T copy-mode-vi 'y' send -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
+bind-key -T copy-mode-vi 'y' send -X copy-pipe "reattach-to-user-namespace pbcopy"
+
 bind p run "reattach-to-user-namespace pbpaste | tmux load-buffer - && tmux paste-buffer"
 
