@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+# credits to @djanowski
+result = ARGF.readlines.sort_by do |line|
+  line.gsub(/[^[:alnum:]_]/, "").downcase
+end
+
+puts(result.join(""))

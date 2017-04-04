@@ -10,7 +10,7 @@ ZSH_THEME="thunder"
 plugins=(git)
 
 # User configuration
-PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/$HOME/.dotfiles/commands"
 
 if [ -d "$HOME/.bin" ]; then
   PATH="$HOME/.bin:$PATH"

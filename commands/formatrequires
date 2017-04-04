@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+# credits to @djanowski
+lines = ARGF.readlines
+token = lines.first[/[:=]/]
+lines = lines.map { |line| line.split(/\s*#{token}\s*/, 2) }
+max   = lines.map { |parts| parts[0].size }.max
+
+lines.each do |parts|
+  case token
+  when "="
+    parts[0] = parts[0] + " " * (max - parts[0].size + 1)
+    parts[1] = " " + parts[1]
+  when ":"
+    parts[1] = " " * (max - parts[0].size + 1) + parts[1]
+  end
+
+  puts(parts.join(token))
+end

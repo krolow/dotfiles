@@ -15,13 +15,6 @@ nnoremap <C-W>\| <C-W>v
 nnoremap <C-W>\- <C-W>S
 
 "save
-command -nargs=0 -bar Update if &modified
-                           \|    if empty(bufname('%'))
-                           \|        browse confirm write
-                           \|    else
-                           \|        confirm write
-                           \|    endif
-                           \|endif
 nnoremap <silent> <C-s :<C-u>Update<CR>
 inoremap <c-s> <Esc>:Update<CR>
 inoremap <c-s> <c-o>:Update<CR>
@@ -74,3 +67,5 @@ nnoremap <c-p> :NERDTreeClose\|CtrlP<CR>
 
 "ctrl + b ... cloes nerd tree and list buffers
 nnoremap <silent> <c-b> :NERDTreeClose\|:CtrlPBuffer<CR>
+
+map <F12> :!alphasort \| formatrequires<CR>
