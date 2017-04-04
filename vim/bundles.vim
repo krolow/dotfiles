@@ -61,9 +61,8 @@ Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
 Plug 'ekalinin/Dockerfile.vim'
 
 "linter/indent/syntax
-Plug 'scrooloose/syntastic'
+Plug 'w0rp/ale'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'pmsorhaindo/syntastic-local-eslint.vim'
 
 "golang
 Plug 'fatih/vim-go', {'for': 'go'}

@@ -48,3 +48,8 @@ let g:ag_lhandler="botright lopen"
 
 "ctrl+p
 let g:ctrlp_map = ''
+
+"ale lint
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\}
