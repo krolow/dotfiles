@@ -57,6 +57,9 @@ Plug 'tpope/vim-haml', {'for': 'html'}
 Plug 'mattn/emmet-vim', {'for': 'html'}
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
 
+"handlebars/mustache
+Plug 'mustache/vim-mustache-handlebars', {'for': ['hbs']}
+
 "docker
 Plug 'ekalinin/Dockerfile.vim'
 
