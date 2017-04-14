@@ -1,6 +1,8 @@
 set-option -g mouse on
 set-option -g default-command "reattach-to-user-namespace $SHELL --login"
-bind-key -T copy-mode-vi 'y' send -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
+
+
+bind-key -T copy-mode-vi 'v' send-keys -X begin-selection
 bind-key -T copy-mode-vi 'y' send -X copy-pipe "reattach-to-user-namespace pbcopy"
 
 bind p run "reattach-to-user-namespace pbpaste | tmux load-buffer - && tmux paste-buffer"
