@@ -30,7 +30,7 @@ editorconfig() {
   cp ~/.dotfiles/.editorconfig $1
 }
 
-my-external-ip() {
+ip() {
   curl -S http://ipinfo.io/ip
 }
 
@@ -40,4 +40,12 @@ docker-bash() {
 
 listen-at-port() {
   sudo netstat -tulpn | grep "$1" | awk '{print $4 " " $7}'
+}
+
+lan() {
+  ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'
+}
+
+dns() {
+  cat /etc/resolv.conf | grep -i nameserver |head -n1 |cut -d ' ' -f2
 }
