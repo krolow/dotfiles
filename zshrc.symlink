@@ -37,6 +37,9 @@ export EDITOR=vim
 export GOPATH=$HOME/golang
 if [ "$(uname)" == "Darwin"  ]; then
   export GOROOT=/usr/local/opt/go/libexec
+  export ANDROID_SDK_ROOT=~/Library/Android/sdk/
+  export JAVA_HOME=$(/usr/libexec/java_home)
+  export PATH="$PATH:$ANDROID_SDK_ROOT"
 else
   export GOROOT=/usr/local/go
 fi
