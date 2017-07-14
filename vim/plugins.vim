@@ -48,6 +48,7 @@ let g:ag_lhandler="botright lopen"
 
 "ctrl+p
 let g:ctrlp_map = ''
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git|tmp'
 
 "ale lint
 let g:ale_linters = {
