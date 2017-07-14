@@ -50,7 +50,7 @@ Plug 'moll/vim-node'
 Plug 'elzr/vim-json', { 'for': 'json' }
 
 "html/css/sass
-Plug 'alvan/vim-closetag', {'for': 'html'}
+Plug 'alvan/vim-closetag', {'for': ['html', 'hbs']}
 Plug 'hail2u/vim-css3-syntax', {'for': ['html', 'css', 'scss']}
 Plug 'gorodinskiy/vim-coloresque', {'for': 'html'}
 Plug 'tpope/vim-haml', {'for': 'html'}
@@ -58,7 +58,7 @@ Plug 'mattn/emmet-vim', {'for': 'html'}
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
 
 "handlebars/mustache
-Plug 'mustache/vim-mustache-handlebars', {'for': ['hbs']}
+Plug 'mustache/vim-mustache-handlebars'
 
 "docker
 Plug 'ekalinin/Dockerfile.vim'
