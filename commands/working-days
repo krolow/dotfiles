@@ -1,0 +1,2 @@
+#! /usr/bin/env bash
+ncal | grep -vE "^S|^ |^$" | sed "s/[[:alpha:]]//g" | fmt -w 1 | sort -n | wc -l
