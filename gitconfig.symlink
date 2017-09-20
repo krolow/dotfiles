@@ -27,3 +27,7 @@
 
 [merge]
   tool = vimdiff
+[github]
+	user = krolow
+[ghi]
+	token = !security find-internet-password -a krolow -s github.com -l 'ghi token' -w
