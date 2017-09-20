@@ -1,2 +1,2 @@
 #! /usr/bin/env bash
-ncal | grep -vE "^S|^ |^$" | sed "s/[[:alpha:]]//g" | fmt -w 1 | sort -n | wc -l
+ncal | grep -vE "^S|^ |^$" | sed "s/[[:alpha:]]//g" | fmt -w 1 | sort -n | wc -l | awk '{$1=$1;print}'
