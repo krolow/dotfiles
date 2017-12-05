@@ -40,8 +40,10 @@ Plug 'tpope/vim-commentary'
 "LANGUAGES
 
 "javascript
-Plug 'othree/yajs.vim', {'for': 'javascript'}
-Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
+Plug 'pangloss/vim-javascript', {'for': 'javascript'}
+
+"jsx
+Plug 'mxw/vim-jsx'
 
 "node
 Plug 'moll/vim-node'
