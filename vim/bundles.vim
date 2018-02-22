@@ -85,4 +85,7 @@ Plug 'neovimhaskell/haskell-vim', {'for': 'hs'}
 "lisp
 Plug 'kovisoft/slimv', {'for': 'lisp'}
 
+"graphql
+Plug 'jparise/vim-graphql'
+
 call plug#end()
