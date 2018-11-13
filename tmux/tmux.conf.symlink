@@ -3,7 +3,8 @@ set -g default-terminal screen-256color
 set -g default-terminal "screen-256color"
 
 # utf8
-# set-window-option -g utf8 on
+set -q -g status-utf8 on
+setw -q -g utf8 on
 
 # changes trigger/prefix
 set-option -g prefix C-a
@@ -57,42 +58,14 @@ setw -g automatic-rename on
 set -g renumber-windows on #when close one window sort it again
 
 
+# display
+set -g status-interval 5
+
+
 # tmux-online-status
-set -g @online_icon " 🌏 "
-set -g @offline_icon "#[fg=#ff0000] 🚫 "
+set -g @online_icon "🌏"
+set -g @offline_icon "#[fg=#ff0000]🚫"
 
-# style..
-set-option -g status-position bottom
-
-#status
-set -g status-fg white
-set -g status-bg black
-
-#window
-set -g window-status-current-format "#[fg=#21252b bg=#333333 none]#[fg=#c0c0c0 bg=#333333]#I ⟩ #[fg=#ffffff] #T#[fg=#21252b bg=#333333]"
-set -g window-status-format "#[fg=#888888 bg=#21252b none]#I ⟩#[fg=#ffffff] #W "
-set -g window-status-separator ""
-
-#panes
-set -g pane-border-fg "#21252B"
-set -g pane-border-bg black
-set -g pane-active-border-fg "#8191A1"
-set -g pane-active-border-bg black
-
-set -g message-fg white
-set -g message-bg black
-set -g message-attr bright
-
-set -g status-interval 1
-set -g status-justify centre
-
-set -g status-bg "#21252B"
-
-set -g status-left-length 60
-set -g status-left "#[fg=#333333 bg=#ffffff bold]#{online_status}#[fg=#ffffff bg=#000000 none]#[fg=#ffffff bg=#000000 bold] 🖥   #[none] #S#[fg=#000000 bg=#21252b]"
-
-set -g status-right-length 100
-set -g status-right "#[fg=#000000 bg=#21252b]#[fg=#ffffff bg=#000000]#(date +'📅  %d/%m/%Y ⏰  %H:%M') #{prefix_highlight}"
 
 # os config
 if-shell "uname | grep -q Darwin" "source-file ~/.tmux-macosx.conf" "source-file ~/.tmux-linux.conf"
@@ -101,3 +74,35 @@ if-shell "uname | grep -q Darwin" "source-file ~/.tmux-macosx.conf" "source-file
 # run plugins
 run '~/.tmux/plugins/tpm/tpm'
 
+
+#### theme
+
+# status
+set-option -g status-position bottom
+set -g status-fg white
+set -g status-bg "#21252B"
+set -g status-justify centre
+
+
+set -g status-left-length 200
+set -g status-left "#[fg=#333333 bg=#ffffff bold]#{online_status}#[fg=#ffffff bg=#000000 none]#[fg=#ffffff bg=#000000 bold] 🖥  #[none]#S#[fg=#000000 bg=#21252b]"
+
+
+set -g status-right-length 140
+set -g status-right "#[fg=#000000 bg=#21252b]#[fg=#ffffff bg=#000000]📅 %d/%m/%Y %H:%M #{prefix_highlight}"
+
+#panes
+set -g pane-border-fg "#21252B"
+set -g pane-border-bg black
+set -g pane-active-border-fg "#8191A1"
+set -g pane-active-border-bg black
+
+#message
+set -g message-fg white
+set -g message-bg black
+set -g message-attr bright
+
+#window
+set -g window-status-current-format "#[fg=#21252b bg=#333333 none]#[fg=#c0c0c0 bg=#333333]#I ⟩ #[fg=#ffffff] #T#[fg=#21252b bg=#333333]"
+set -g window-status-format "#[fg=#888888 bg=#21252b none]#I ⟩#[fg=#ffffff] #W "
+set -g window-status-separator ""
