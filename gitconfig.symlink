@@ -30,4 +30,7 @@
 [github]
 	user = krolow
 [ghi]
-	token = !security find-internet-password -a krolow -s github.com -l 'ghi token' -w
+  token = !security find-internet-password -a krolow -s github.com -l 'ghi token' -w
+
+[fetch]
+	prune = true
