@@ -51,8 +51,10 @@ let g:ctrlp_map = ''
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git|tmp'
 
 "ale lint
-let g:ale_linters = {
-\   'javascript': ['eslint'],
-\}
-
+let b:ale_linters = {'javascript': ['eslint']}
+let b:ale_fixers = {'javascript': ['eslint']}
+let g:ale_fix_on_save = 1
 let g:jsx_ext_required = 0
+
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
