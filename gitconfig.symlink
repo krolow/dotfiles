@@ -24,13 +24,14 @@
   editor = vim
   excludesfile = ~/.gitignore
   attributesfile = ~/.gitattributes
+  hooksPath = ~/.dotfiles/git/hooks/
 
 [merge]
   tool = vimdiff
 [github]
-	user = krolow
+  user = krolow
 [ghi]
   token = !security find-internet-password -a krolow -s github.com -l 'ghi token' -w
 
 [fetch]
-	prune = true
+  prune = true

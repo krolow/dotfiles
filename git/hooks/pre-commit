@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+
+# Validates that you don't commit forbidden keywords to the repo
+# You can skip this checking with 'git commit --no-verify'
+
+exit 0 if ARGV.include?('--no-verify')
+# Update this list with your own forbidden keywords
+KEYWORDS = %w(binding.pry console.log debugger .only)
+
+def red(text)    "\033[31m#{text}\033[0m"; end
+def yellow(text) "\033[33m#{text}\033[0m"; end
+
+# list all the files staged for commit
+files_changed = %x(git diff --cached --name-only --).split
+
+# search files for keywords
+%x(git grep -q -E "#{KEYWORDS.join('|')}" #{files_changed.join(' ')})
+if $?.exitstatus.zero?
+  puts "# Check following lines:"
+  files_changed.each do |file|
+    KEYWORDS.each do |keyword|
+      %x(git grep -q #{keyword} #{file})
+      if $?.exitstatus.zero?
+        line = %x(git grep -n #{keyword} #{file} | awk -F ":" '{print $2}').split.join(', ')
+        puts "#\t#{red(file)}:#{line} contains #{yellow keyword}."
+      end
+    end
+  end
+  puts "Use 'git commit --no-verify' to skip this validation"
+  exit 1
+end
