@@ -8,8 +8,9 @@ set -e
 DIR=$(pwd)
 
 # install apps
+echo "${DIR}/../macos/*.sh"
 for file in "${DIR}/../macos/*.sh"; do
-  bash -c $file
+  bash $file -H
 done
 
 # Increase keyboard speed
@@ -31,4 +32,4 @@ defaults write com.apple.terminal FocusFollowsMouse -bool true
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 defaults write com.googlecode.iterm2 HideTab -bool true
 
-open "${DIR}/../macos/themes/iterm/one-dark/One Dark.itermcolors"
+#open "${DIR}/../macos/themes/iterm/one-dark/One Dark.itermcolors"

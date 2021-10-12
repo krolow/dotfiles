@@ -50,3 +50,7 @@ let g:airline#extensions#branch#enabled=1
 
 set mouse=a
 set ttymouse=xterm2
+
+if exists("g:loaded_webdevicons")
+	call webdevicons#refresh()
+endif

@@ -34,17 +34,22 @@ stty -ixon
 export EDITOR=vim
 
 #golang
-export GOPATH=$HOME/golang
-if [ "$(uname)" == "Darwin"  ]; then
-  export GOROOT=/usr/local/opt/go/libexec
-  export ANDROID_SDK_ROOT=~/Library/Android/sdk/
-  export JAVA_HOME=$(/usr/libexec/java_home)
-  export PATH="$PATH:$ANDROID_SDK_ROOT"
-else
-  export GOROOT=/usr/local/go
-fi
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
+# export GOPATH=$HOME/golang
+# if [ "$(uname)" == "Darwin"  ]; then
+#   export GOROOT=/usr/local/opt/go/libexec
+#   export ANDROID_SDK_ROOT=~/Library/Android/sdk/
+#   export JAVA_HOME=$(/usr/libexec/java_home)
+#   export PATH="$PATH:$ANDROID_SDK_ROOT"
+# else
+#   export GOROOT=/usr/local/go
+# fi
+# export PATH=$PATH:$GOPATH/bin
+# export PATH=$PATH:$GOROOT/bin
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+export ANDROID_SDK=$HOME/Library/Android/sdk
+export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$PATH
+export LC_ALL=en_US.UTF-8

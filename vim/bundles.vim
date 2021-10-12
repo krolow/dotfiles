@@ -30,7 +30,7 @@ Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
-Plug 'Shougo/neocomplete.vim'
+"Plug 'Shougo/neocomplete.vim'
 
 "emoji
 Plug 'junegunn/vim-emoji'
@@ -42,6 +42,8 @@ Plug 'tpope/vim-commentary'
 
 "javascript
 Plug 'pangloss/vim-javascript', {'for': 'javascript'}
+Plug 'prettier/vim-prettier', {'do': 'yarn install'}
+Plug 'leafgarland/typescript-vim' " TypeScript syntax
 
 "jsx
 Plug 'mxw/vim-jsx'
@@ -72,7 +74,8 @@ Plug 'editorconfig/editorconfig-vim'
 
 "golang
 Plug 'fatih/vim-go', {'for': 'go'}
-Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
+"Plug 'nsf/gocode', { 'rtp': 'vim', 'do':
+"'~/.vim/plugged/gocode/vim/symlink.sh' }
 
 "rust
 Plug 'rust-lang/rust.vim'
@@ -88,5 +91,11 @@ Plug 'kovisoft/slimv', {'for': 'lisp'}
 
 "graphql
 Plug 'jparise/vim-graphql'
+
+
+Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
+
+"prisma
+Plug 'pantharshit00/vim-prisma'
 
 call plug#end()

@@ -1,6 +1,9 @@
 "spell
 set complete+=kspell "autocomplete
 setlocal spell spelllang=en_us
+set updatetime=300
+set nobackup
+set nowritebackup
 
 "copy to clipboard
 if has("unix")
@@ -16,7 +19,6 @@ endif
 "delete macosx work as delete
 set backspace=indent,eol,start
 
-"disable complete preview
-set completeopt-=preview
+set completeopt=preview,menuone
 
 set tw=0

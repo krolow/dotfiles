@@ -58,3 +58,7 @@ let g:jsx_ext_required = 0
 
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
+
+
+
+let g:coc_global_extensions = [ 'coc-tsserver' ]

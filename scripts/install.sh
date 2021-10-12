@@ -28,4 +28,3 @@ mkdir -p "${HOME}/.oh-my-zsh/custom/themes/"
 curl -l https://raw.githubusercontent.com/krolow/thunder-zsh/master/thunder.zsh-theme > "${HOME}/.oh-my-zsh/custom/themes/thunder.zsh-theme"
 
 # zsh as default shell
-chsh -s $(which zsh)

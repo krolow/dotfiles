@@ -69,3 +69,14 @@ nnoremap <c-p> :NERDTreeClose\|CtrlP<CR>
 nnoremap <silent> <c-b> :NERDTreeClose\|:CtrlPBuffer<CR>
 
 map <F12> :!alphasort \| formatrequires<CR>
+
+
+nmap <Leader>pt <Plug>(Prettier)
+
+
+nnoremap <silent><leader>1 :source ~/.vimrc \| :PlugInstall<CR>
+
+nnoremap <leader><Up>   :<C-u>silent! move-2<CR>==
+nnoremap <leader><Down> :<C-u>silent! move+<CR>==
+xnoremap <leader><Up>   :<C-u>silent! '<,'>move-2<CR>gv=gv
+xnoremap <leader><Down> :<C-u>silent! '<,'>move'>+<CR>gv=gv
