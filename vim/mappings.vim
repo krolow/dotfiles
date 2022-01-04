@@ -84,3 +84,6 @@ xnoremap <leader><Down> :<C-u>silent! '<,'>move'>+<CR>gv=gv
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>g  :call CocAction('jumpDefinition', 'drop')<CR>
+
+
+let vim_markdown_preview_hotkey='<C-m>'
