@@ -62,3 +62,7 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 
 let g:coc_global_extensions = [ 'coc-tsserver' ]
+
+
+"markdown preview
+let vim_markdown_preview_hotkey='<C-m>'
