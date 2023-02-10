@@ -1,6 +1,7 @@
 # docker alias
 alias docker-ps='docker ps -a'
 alias docker-clean='docker rm $(docker ps -aq)'
+alias docker-compose="docker compose"
 alias docker-force-clean='docker rm -f $(docker ps -aq)'
 alias docker-compose-run="docker-compose run --service-ports --rm --all"
 alias docker-compose-command="docker-compose run --rm --no-deps"
