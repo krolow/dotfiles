@@ -53,6 +53,7 @@ Plug 'moll/vim-node'
 
 "json
 Plug 'elzr/vim-json', { 'for': 'json' }
+Plug 'bfrg/vim-jq'
 
 "html/css/sass
 Plug 'alvan/vim-closetag', {'for': ['html', 'hbs']}
@@ -97,5 +98,7 @@ Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 
 "prisma
 Plug 'pantharshit00/vim-prisma'
+
+Plug 'cespare/vim-toml', { 'branch': 'main' }
 
 call plug#end()
